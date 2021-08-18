@@ -1,0 +1,168 @@
+[
+{
+  "model": "resume.profile",
+  "pk": 1,
+  "fields": {
+    "fullname": "Charles X.",
+    "tag": "Software Developer",
+    "age": 2000,
+    "email": "oraegbucharlesc@gmail.com",
+    "status": "Available",
+    "address": "Lagos, Nigeria",
+    "contact": "+2348170278509",
+    "bio": "I am passionate about software developer. I am a skilled Fullstack developer and master of various programming languages such as Python, C#, C. I am a quick learner and a team worker that gets the job done. I can easily capitalize on low hanging fruits and quickly maximize timely deliverables for real-time schemas."
+  }
+},
+{
+  "model": "resume.skill",
+  "pk": 1,
+  "fields": {
+    "title": "HTML",
+    "value": 90
+  }
+},
+{
+  "model": "resume.skill",
+  "pk": 2,
+  "fields": {
+    "title": "CSS",
+    "value": 80
+  }
+},
+{
+  "model": "resume.skill",
+  "pk": 3,
+  "fields": {
+    "title": "JavaScript",
+    "value": 80
+  }
+},
+{
+  "model": "resume.skill",
+  "pk": 4,
+  "fields": {
+    "title": "Vue",
+    "value": 65
+  }
+},
+{
+  "model": "resume.skill",
+  "pk": 5,
+  "fields": {
+    "title": "Python",
+    "value": 90
+  }
+},
+{
+  "model": "resume.skill",
+  "pk": 6,
+  "fields": {
+    "title": "PostgreSQL",
+    "value": 70
+  }
+},
+{
+  "model": "resume.skill",
+  "pk": 7,
+  "fields": {
+    "title": "Django",
+    "value": 90
+  }
+},
+{
+  "model": "resume.service",
+  "pk": 1,
+  "fields": {
+    "title": "Web Development"
+  }
+},
+{
+  "model": "resume.service",
+  "pk": 2,
+  "fields": {
+    "title": "Backend Services"
+  }
+},
+{
+  "model": "resume.service",
+  "pk": 3,
+  "fields": {
+    "title": "API Development"
+  }
+},
+{
+  "model": "resume.service",
+  "pk": 4,
+  "fields": {
+    "title": "DevOps"
+  }
+},
+{
+  "model": "resume.portfolio",
+  "pk": 1,
+  "fields": {
+    "title": "Rad",
+    "link": "https://rad.pythonanywhere.com"
+  }
+},
+{
+  "model": "resume.portfolio",
+  "pk": 2,
+  "fields": {
+    "title": "GLC Project",
+    "link": ""
+  }
+},
+{
+  "model": "resume.portfolio",
+  "pk": 3,
+  "fields": {
+    "title": "Ozav Enterprise",
+    "link": ""
+  }
+},
+{
+  "model": "resume.portfolio",
+  "pk": 4,
+  "fields": {
+    "title": "Weekend Labs LLP",
+    "link": ""
+  }
+},
+{
+  "model": "resume.experience",
+  "pk": 1,
+  "fields": {
+    "title": "Backend Developer",
+    "subtitle": "WeekendLabs LLP (2021 - Present)",
+    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.\r\n\r\nOrganically grow the holistic world view of disruptive innovation via workplace diversity and empowerment."
+  }
+},
+{
+  "model": "resume.experience",
+  "pk": 2,
+  "fields": {
+    "title": "Fullstack Developer",
+    "subtitle": "Ozav Enterprise (2020)",
+    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.\r\n\r\nOrganically grow the holistic world view of disruptive innovation via workplace diversity and empowerment."
+  }
+},
+{
+  "model": "resume.experience",
+  "pk": 3,
+  "fields": {
+    "title": "Backend Developer",
+    "subtitle": "GLC MObile (2020)",
+    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.\r\n\r\nOrganically grow the holistic world view of disruptive innovation via workplace diversity and empowerment."
+  }
+},
+{
+  "model": "resume.experience",
+  "pk": 4,
+  "fields": {
+    "title": "Fullstack Developer",
+    "subtitle": "Rad (2020)",
+    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.\r\n\r\nOrganically grow the holistic world view of disruptive innovation via workplace diversity and empowerment."
+  }
+}
+]

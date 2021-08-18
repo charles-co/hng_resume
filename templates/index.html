@@ -1,0 +1,360 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- upto 2 directory depth-->
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HNG | INTERNSHIP RESUME</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
+    </noscript>
+    <link href={% static 'css/font-awesome/css/all.min.css' %} rel="stylesheet">
+    <link href={% static 'css/bootstrap-icons/bootstrap-icons.css' %} rel="stylesheet">
+    <link href={% static 'css/bootstrap.min.css' %} rel="stylesheet">
+    <link href={% static 'css/aos.css' %} rel="stylesheet">
+    <link href={% static 'css/main.css' %} rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+      </symbol>
+    </svg>
+    <div class="alert overflow-hidden fixed-top alert-success alert-dismissible fade p-1 d-none mx-auto my-1 w-50" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+    </div>
+    <header class="bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
+        <div class="container">
+          <a class="link-dark navbar-brand site-title mb-0" href="https://zuri.team/" target="_blank">
+            <img src={% static 'images/logo.png' %} alt="" width="100" height="30">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-2">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="page-content">
+      <div id="content">
+<header>
+  <div class="cover bg-light">
+    <div class="container px-3">
+      <div class="row">
+        <div class="col-lg-6 p-2"><img class="img-fluid" src={% static 'images/illustrations/hello3.svg' %} alt="hello"/></div>
+        <div class="col-lg-6">
+          <div class="mt-5">
+            <p class="lead text-uppercase mb-1">Hello!</p>
+            <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m {{ profile.fullname }}</h1>
+            <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">{{ profile.tag }}</p>
+            <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
+              <nav role="navigation">
+                <ul class="nav justify-content-left">
+                  <li class="nav-item"><a class="nav-link" href="https://twitter.com/charles-co" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://www.github.com/charles-co" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a class="btn btn-primary shadow-sm mt-1 hover-effect" href="#contact">Get In Touch <i class="fas fa-arrow-right"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wave-bg"></div>
+</header>
+<div class="section pt-4 px-3 px-lg-4" id="about">
+  <div class="container-narrow">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="h4 my-2">Hello! I’m {{ profile.fullname }}</h2>
+        <p>{{ profile.tag }}</p>
+        <div class="row mt-3">
+          <div class="col-sm-2">
+            <div class="pb-1">Age:</div>
+          </div>
+          <div class="col-sm-10">
+            <div class="pb-1 fw-bolder">{{ profile.age }}</div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pb-1">Email:</div>
+          </div>
+          <div class="col-sm-10">
+            <div class="pb-1 fw-bolder">{{ profile.email }}</div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pb-1">Phone:</div>
+          </div>
+          <div class="col-sm-10">
+            <div class="pb-1 fw-bolder">{{ profile.contact }}</div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pb-1">Address:</div>
+          </div>
+          <div class="col-sm-10">
+            <div class="pb-1 fw-bolder">{{ profile.address }}</div>
+          </div>
+          <div class="col-sm-2">
+            <div class="pb-1">Staus:</div>
+          </div>
+          <div class="col-sm-10">
+            <div class="pb-1 fw-bolder">
+              <span class="d-flex">
+                {{ profile.status }}
+                <div class="mx-1 align-self-center p-md-1 {% if profile.status == 'Available' %}bg-success{% else %}bg-warning{% endif %} rounded rounded-circle" style="height:10px;width:10px;"></div>
+              </span>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src={% static 'images/avatar.jpeg' %} width="400" height="400" alt="Charles"/></div>
+    </div>
+  </div>
+</div>
+<div class="section px-3 px-lg-4 pt-5" id="services">
+  <div class="container-narrow">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">My Services</h2>
+    </div>
+    <div class="text-center">
+      <p class="mx-auto mb-3" style="max-width:600px"> I offer services fit for any website or app. I can quickly maximize timely deliverables for real-time schemas.</p>
+    </div>
+    <div class="row py-3">
+      {% static 'images/services/web-design.svg' as first %}
+      {% static 'images/services/app-development.svg' as second %}
+      {% for service in services %}
+      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100"><img class="mb-2" src={% cycle first second %} width="96" height="96" alt="web design"/>
+        <div class="h5">{{ service.title }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="section px-3 px-lg-4 pt-5" id="skills">
+  <div class="container-narrow">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">My Skills</h2>
+    </div>
+    <div class="text-center">
+      <p class="mx-auto mb-3" style="max-width:600px">I am a quick learner and specialize in multitude of skills required for Web Application Development and Product Design</p>
+    </div>
+    <div class="bg-light p-3">
+      <div class="d-flex flex-wrap justify-content-between">
+        {% for skill in skills %}
+        <div class="py-1 col-5">
+          <div class="d-flex text-small fw-bolder"><span class="me-auto">{{ skill.title }}</span><span>{{ skill.value }}%</span></div>
+          <div class="progress my-1">
+            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: {{ skill.value }}%" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section px-2 px-lg-4 pt-5" id="portfolio">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">Portfolio </h2>
+    </div>
+    <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
+      <div class="grid-sizer"></div>
+      {% for portfolio in portfolios %}
+      <div class="grid-item">
+        <a href={{ portfolio.link }}>
+          <figure class="portfolio-item"><img src={% static 'images/portfolio/8-small.png' %} data-bp={% static 'images/portfolio/8.jpg' %} data-caption="{{ portfolio.title }}"/>
+            <figcaption> 
+              <h4 class="h5 mb-0">{{ portfolio.title }}</h4>
+              <div>{{ portfolio.link }}</div>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="section px-3 px-lg-4 pt-5" id="experience">
+  <div class="container-narrow">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">Experience</h2>
+    </div>
+    <div class="d-flex flex-row flex-wrap justify-content-between">
+      {% for experience in experiences %}
+      {% static 'images/services/ui-ux.svg' as uiux %}
+      {% static 'images/services/app-development.svg' as ap %}
+      {% static 'images/services/web-design.svg' as wd %}
+      {% static 'images/services/full-stack.svg' as fs %}
+      <div class="col-md-5">
+        <div class="card mb-3" data-aos="fade-right" data-aos-delay="100">
+          <div class="card-header px-3 py-2">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h3 class="h5 mb-1">{{ experience.title }}</h3>
+                <div class="text-muted text-small">{{ experience.subtitle }}</div>
+              </div><img src={% cycle uiux ap wd fs %} width="48" height="48" alt={{ experience.title }}/>
+            </div>
+          </div>
+          <div class="card-body px-3 py-2">
+            <p>{{ experience.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="section px-3 px-lg-4 pt-5" id="testimonials">
+  <div class="container-narrow">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">Client Testimonials</h2>
+    </div>
+    <div class="row"> 
+      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
+        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Charles exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</span></div>
+        <div class="d-flex justify-content-end align-items-end">
+          <div class="text-end me-2">
+            <div class="fw-bolder">Aiyana</div>
+            <div class="text-small">CEO / Web Design Company</div>
+          </div><img class="me-md-3 rounded" src={% static 'images/testimonials/client1.jpg' %} width="96" height="96" alt="client 1"/>
+        </div>
+      </div>
+      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="300">
+        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Charles exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</span></div>
+        <div class="d-flex justify-content-end align-items-end">
+          <div class="text-end me-2">
+            <div class="fw-bolder">Alexander</div>
+            <div class="text-small">CEO / Web Design Company</div>
+          </div><img class="me-md-3 rounded" src={% static 'images/testimonials/client2.jpg' %} width="96" height="96" alt="client 1"/>
+        </div>
+      </div>
+      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="200">
+        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Charles is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
+        <div class="d-flex justify-content-end align-items-end">
+          <div class="text-end me-2">
+            <div class="fw-bolder">Ariya</div>
+            <div class="text-small">Web Developer</div>
+          </div><img class="me-md-3 rounded" src={% static 'images/testimonials/client3.jpg' %} width="96" height="96" alt="client 1"/>
+        </div>
+      </div>
+      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="400">
+        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Charles is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
+        <div class="d-flex justify-content-end align-items-end">
+          <div class="text-end me-2">
+            <div class="fw-bolder">Braiden</div>
+            <div class="text-small">Web Designer</div>
+          </div><img class="me-md-3 rounded" src={% static 'images/testimonials/client4.jpg' %} width="96" height="96" alt="client 1"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
+  <div class="container-narrow">
+    <div class="text-center mb-5">
+      <h2 class="marker marker-center">Contact Me</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="bg-light my-2 p-3 pt-2"><form
+    method="POST">
+    {% csrf_token %}
+    <div class="form-group my-2">
+      <label for="name" class="form-label fw-bolder">Name</label>
+      <input class="form-control" type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group my-2">
+      <label for="email" class="form-label fw-bolder">Email</label>
+      <input class="form-control" type="email" id="email" name="email" required>
+    </div>
+  <div class="form-group my-2">
+    <label for="message" class="form-label fw-bolder">Message</label>
+    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
+  </div>
+  <button class="btn btn-primary mt-2" type="submit">Send</button>
+</form>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+        <div class="mt-3 px-1">
+          <div class="h5">Let’s talk how I can help you!</div>
+          <p>If you like my work and want to avail my services then drop me a message using the contact form. </p>
+          <p>Or get in touch using my email or my contact number.</p>
+          <p>See you!</p>
+        </div>
+        <div class="mt-53 px-1">
+          <div class="row"> 
+            <div class="col-sm-2">
+              <div class="pb-1">Email:</div>
+            </div>
+            <div class="col-sm-10">
+              <div class="pb-1 fw-bolder">{{ profile.email }}</div>
+            </div>
+            <div class="col-sm-2">
+              <div class="pb-1">Phone:</div>
+            </div>
+            <div class="col-sm-10">
+              <div class="pb-1 fw-bolder">{{ profile.contact }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="pt-4 pb-4 text-center bg-light">
+  <div class="container">
+    <div class="my-3">
+      <div class="h4">{{ profile.fullname }}</div>
+      <p>Sofware Developer</p>
+      <div class="social-nav">
+        <nav role="navigation">
+          <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="https://twitter.com/charles-co" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="text-small text-secondary">
+      <div class="mb-1">&copy; {{ profile.fullname }} All rights reserved.</div>
+      <div>
+        <!-- Make sure to buy a license for the template before removing the line below. Buy license on https://templateflip.com/ -->Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
+    </div>
+  </div>
+</footer></div>
+    </div>
+    <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i class="fas fa-angle-up fa-x"></i></span></a></div>
+    {% url 'index-page' as index %}
+    {{ index|json_script:"index-page" }}
+    <script src="{% static 'scripts/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'scripts/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'scripts/BigPicture.min.js' %}"></script>
+    <script src="{% static 'scripts/purecounter.min.js' %}"></script>
+    <script src="{% static 'scripts/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'scripts/aos.min.js' %}"></script>
+    <script src="{% static 'scripts/main.js' %}"></script>
+  </body>
+</html>
